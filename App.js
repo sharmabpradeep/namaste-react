@@ -1,47 +1,29 @@
-/*
-<div id='parent'>
-    <div id='class'>
-        <h1>Hi I'm h1 tag</h1>    
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+
+//JSX
+// const heading = <h1 id='heading'>Namaste React</h1>
+
+// console.log(headingeading);
+
+//React Functional Component 
+
+const Title = () => {
+    <h1 className='title'>Hi I'm the title</h1>
+    
+}
+
+const HeadingComponent = () => {
+    return(
+    <div id='container'>
+        <Title />
+        <h1 className='heading'>Namaste React Functional Component</h1>
     </div>
-</div>
+    )
+}
 
-How you gonna create the nested elements?
-*/
-
-
-
-//The heading here is an object. The create element function creates an object.
-
-const parent = React.createElement(
-    'div', 
-    {id:'parent'}, 
-    React.createElement(
-        'div', 
-        {id : 'child'},
-        [
-            React.createElement(
-                'h1',
-                {},
-                'The h1 tag'
-            ),
-            React.createElement(
-                'h2',
-                {},
-                'Hi here is me h1 sibiling'
-            )
-        ]
-
-        )
-    );
-
-// const heading = React.createElement(
-//     'h1', 
-//     {id : 'heading'}, 
-//     'Hello World from React'
-//     );
-
-console.log(parent); //return object in console.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(parent);
+root.render(<HeadingComponent/>);
