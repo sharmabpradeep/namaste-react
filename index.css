@@ -1,4 +1,8 @@
-.header{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .header{
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
@@ -74,4 +78,4 @@
 .search{
     padding: 10px;
     margin: 10px;
-}
+} */

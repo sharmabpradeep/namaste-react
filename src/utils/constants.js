@@ -6,3 +6,4 @@ export const LOGO_URL =
 
 //Two types of export named export and a default export
 //The above one is called as name export
+export const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.1886311&lng=77.41640629999999&restaurantId="
